@@ -1,0 +1,80 @@
+body {
+  display: none;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.first {
+  background-color: #2b2a2a;
+}
+
+.titlePlus {
+  background-color: #fff;
+  border: 2vh solid #2b2a2a;
+  border-radius: 2.7vh;
+  position: relative!important;
+
+}
+
+.mainTitle {
+  font-size: 10vh;
+}
+
+
+.title-content {
+  position: absolute;
+  bottom: 0;
+  transition: position .5s;
+
+}
+
+.titleSm {
+}
+
+.mvid {
+  max-height: 75vh;
+}
+
+.display-sm {
+  display: none;
+}
+
+.appRow {
+  width: 50%;
+  height: 10vh;
+  margin-left: 0;
+  transition: opacity .5s;
+}
+
+.sendTextImg:hover {
+  cursor: pointer;
+}
+
+.phoneInput {
+  width: 100%;
+  height: 6vh;
+}
+
+.form-control:focus {
+  border-color: #000;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
+}
+
+
+
+@media (max-width: 768px) {
+  .display-sm {
+    display: inherit;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .mvid {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+}
