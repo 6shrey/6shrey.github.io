@@ -5,6 +5,8 @@
 .mouse_scroll {
 	display: block;
 	margin: 0 auto;
+
+		margin-bottom: 3vw;
 	width: 24px;
 	height: 100px;
 	//background: blue;

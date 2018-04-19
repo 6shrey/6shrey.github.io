@@ -1,13 +1,35 @@
 body {
   display: none;
+  background-color: #2b2a2a;
 }
 
 .main {
   min-height: 100vh;
 }
 
-.first {
-  background-color: #2b2a2a;
+.second {
+  min-height: 80vh;
+}
+
+.third {
+  min-height: 0;
+  height: 90vh;
+  position: relative!important;
+
+}
+
+.brandsBg {
+  height: 100%;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+.brandsAppStoreIcon {
+  width: 15%;
+}
+
+.brands-left {
+  margin-top: 25%;
 }
 
 .titlePlus {
@@ -20,6 +42,31 @@ body {
 
 .mainTitle {
   font-size: 10vh;
+}
+
+.brandsTitle {
+  font-size: 10vh;
+}
+
+.personalizeTitle {
+  font-size: 10vh;
+  margin-top: 30vh;
+}
+
+.personalizeTitle-sm {
+  font-size: 8vh;
+}
+
+.personalText-sm {
+  margin-top: 7vh;
+}
+
+
+.pill-light {
+  width: 10vh;
+  height: 2vh;
+  background-color: #fff;
+  border-radius: 2vh;
 }
 
 
@@ -41,7 +88,7 @@ body {
   display: none;
 }
 
-.appRow {
+.appRow-main {
   width: 50%;
   height: 10vh;
   margin-left: 0;
@@ -62,6 +109,36 @@ body {
   box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
 }
 
+.pRel {
+  position: relative!important;
+}
+
+.brandImgContainer {
+  max-width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.brandImg {
+  -webkit-box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.46);
+  -moz-box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.46);
+  box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.46);
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  border-radius: 3vh;
+  transition: all 0.3s ease;
+
+}
+
+.brandImg:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.brandsText {
+  width: 50%;
+}
 
 
 @media (max-width: 768px) {
@@ -69,12 +146,40 @@ body {
     display: inherit;
   }
 
+  .brandsText {
+    width: 95%;
+  }
+
   .hide-sm {
     display: none;
+  }
+
+  .brandsTitle {
+    margin-left: 2vw;
+  }
+
+  .brandImg {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    border-radius: 2vh;
+    transition: all 0.3s ease;
   }
 
   .mvid {
     max-width: 80%;
     margin-left: 10%;
+  }
+
+  .brandsBg {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+
+  .brands-left {
+    margin-top: 0%;
   }
 }
