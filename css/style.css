@@ -3,6 +3,67 @@ body {
   background-color: #2b2a2a;
 }
 
+.exclusiveTitle {
+  font-size: 3vw;
+  margin-top: 15vh;
+}
+
+.mTop-lg {
+  margin-top: 35vh;
+}
+
+.exclusive-cont {
+  position: relative!important;
+}
+
+.exclusive-title {
+  margin-right: 1.5em;
+}
+
+.exclusive-title-right {
+  margin-left: 1.5em;
+}
+
+.exclusive-text-left {
+  margin-left: 40%;
+  width: 60%;
+  font-size: 80%;
+}
+
+.exclusive-text-right {
+  margin-right: 40%;
+  width: 60%;
+  font-size: 80%;
+}
+
+.exclusive-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.exclusive-icon-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-w {
+  width: 1em;
+}
+
+.icon-h {
+  height: 1em;
+}
+
+.icon-car {
+  height: 0.75em;
+}
+
+.icon-coin {
+  height: 1.2em;
+}
+
 .main {
   min-height: 100vh;
 }
@@ -145,6 +206,28 @@ body {
   .display-sm {
     display: inherit;
   }
+
+  .icon-car {
+    height: 1em;
+  }
+
+  .icon-shoe {
+    height: 0.7em;
+  }
+
+  .icon-coin {
+    height: 1.5em;
+  }
+
+  .exclusiveTitle {
+    font-size: 10vh;
+    margin-top: 2vh;
+  }
+
+  .icon-diamond {
+    height: 1.2em;
+  }
+
 
   .brandsText {
     width: 95%;
