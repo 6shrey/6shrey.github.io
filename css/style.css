@@ -3,9 +3,21 @@ body {
   background-color: #2b2a2a;
 }
 
+.quickTitle {
+  margin-top: 20vh;
+}
+
+.quickPic {
+  margin-top: 10vh;
+}
+
 .exclusiveTitle {
   font-size: 3vw;
   margin-top: 15vh;
+}
+
+.quickTitle {
+  font-size: 10vh;
 }
 
 .mTop-lg {
@@ -206,6 +218,11 @@ body {
   .display-sm {
     display: inherit;
   }
+
+  .quickTitle {
+    margin-top: 10vh;
+  }
+
 
   .icon-car {
     height: 1em;
