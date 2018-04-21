@@ -3,8 +3,34 @@ body {
   background-color: #2b2a2a;
 }
 
+.contactBtn:hover {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: -1vh;
+}
+
+.requestDiv, .contactDiv {
+  display: none;
+}
+
+.notiColor {
+  background-color: #F6F6F6;
+  transition: background-color .5s;
+}
+
+
+.sellerBtn:hover {
+  cursor: pointer;
+}
+
 .quickTitle {
   margin-top: 20vh;
+}
+
+.notiText {
+  font-size: 8vh;
 }
 
 .quickPic {
@@ -219,21 +245,26 @@ body {
     display: inherit;
   }
 
+
+
   .quickTitle {
     margin-top: 10vh;
   }
 
-
   .icon-car {
-    height: 1em;
-  }
-
-  .icon-shoe {
     height: 0.7em;
   }
 
+  .icon-shoe {
+    height: 1em;
+  }
+
+  .icon-h {
+    height: 1.7em;
+  }
+
   .icon-coin {
-    height: 1.5em;
+    height: 1em;
   }
 
   .exclusiveTitle {
@@ -242,7 +273,7 @@ body {
   }
 
   .icon-diamond {
-    height: 1.2em;
+    height: 0.75em;
   }
 
 
