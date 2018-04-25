@@ -4,84 +4,42 @@ window.contactShowing = false;
 
 $(document).ready(function() {
 
+
+  maskOptions = {
+    onComplete: function(cep) {
+
+      $(".phoneInput").fadeOut().promise().done(function() {
+        $(".phoneSendMain").show();
+      });
+
+    },
+  }
+  $('.phoneMain').mask('(000) 000-0000', maskOptions);
+
   setTimeout(function() {
     $('body').fadeIn(100);
   }, 200)
 
+  function phoneSubmit(form) {
+    console.log(form);
+    return false;
+  }
+
 
   $(".sendTextImg").click(function() {
-    $(".appRow").css('opacity', '0').promise().done(function() {
 
-      setTimeout(function() {
-        $(".appRow").html("<div class='input-group mb-3 phoneInput'> <input type='text' class='form-control phoneMain' placeholder='Phone Number' aria-label='Recipient's username' aria-describedby='basic-addon2'> <div class='input-group-append'> <button class='btn btn-outline-secondary sendTextBtn' type='button'>Send</button> </div> </div>");
-        $(".phoneMain").mask('(999) 999-9999');
-
-        $(".sendTextBtn").click(function() {
-
-          $(".appRow").css('opacity', '0').promise().done(function() {
-
-            setTimeout(function() {
-              $(".appRow").html("<div class='col-md-6 p-1 appRowDefault'> <img class='img-fluid' src='/img/appstore.png' /> </div>");
-              setTimeout(function() {
-                $(".appRow").css('opacity', '1');
-                $(".appRow").append("<div class='col-md-6 p-1 appRowDefault animated zoomInRight'> <img class='img-fluid textSentImg' src='/img/text_sent.png' /> </div>");
-              }, 500);
-            }, 500);
-
-
-          });
-
-        });
-
-        setTimeout(function() {
-          $('.appRow').css('opacity', '1');
-        }, 300)
-
-      }, 500)
-
-
+    $(".appRow").fadeOut(500).promise().done(function() {
+      $(".numbRow").fadeIn();
     });
-
-
 
 
   });
 
   $(".sendTextImg_sm").click(function() {
-    $(".appRow_sm").css('opacity', '0').promise().done(function() {
 
-      setTimeout(function() {
-        $(".appRow_sm").html("<div class='input-group mb-3 phoneInput'> <input type='text' class='form-control phoneMain' placeholder='Phone Number' aria-label='Recipient's username' aria-describedby='basic-addon2'> <div class='input-group-append'> <button class='btn btn-outline-secondary sendTextBtn' type='button'>Send</button> </div> </div>");
-        $(".phoneMain").mask('(999) 999-9999');
-
-        $(".sendTextBtn_sm").click(function() {
-
-          $(".appRow_sm").css('opacity', '0').promise().done(function() {
-
-            setTimeout(function() {
-              $(".appRow_sm").html("<div class='col-2'> </div> <div class='col-4 p-1 appRowDefault_sm'> <img class='img-fluid' src='/img/appstore.png' /> </div>");
-              setTimeout(function() {
-                $(".appRow_sm").css('opacity', '1');
-                $(".appRow_sm").append("<div class='col-4 p-1 appRowDefault_sm'> <img class='img-fluid' src='/img/text_sent.png' /> </div>");
-              }, 500);
-            }, 500);
-
-
-          });
-
-        });
-
-        setTimeout(function() {
-          $('.appRow_sm').css('opacity', '1');
-        }, 300)
-
-      }, 500)
-
-
+    $(".appRow_sm").fadeOut(200).promise().done(function() {
+      $(".numbRow").fadeIn();
     });
-
-
-
 
   });
 

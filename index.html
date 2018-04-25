@@ -36,6 +36,17 @@
                 <img class='img-fluid sendTextImg' src='/img/send_text.png' />
               </div>
             </div>
+
+            <div class='row numbRow appRow-main mb-3'>
+              <form action='/text' method='GET' id='phoneForm' onSubmit='return phoneSubmit(this)'>
+                <div class='input-group mb-3 phoneInput phoneInput-l'>
+                  <input type='text' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
+                </div>
+
+                <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain" value='Send'></input>
+
+              </form>
+            </div>
           </div>
 
 
@@ -65,6 +76,27 @@
                 <img class='img-fluid sendTextImg_sm' src='/img/send_text.png' />
               </div>
             </div>
+
+            <div class='row numbRow mb-3'>
+              <div class='col-2'>
+
+              </div>
+              <div class='col-12'>
+                <form action='/text' method='GET' id='phoneForm' onSubmit='return phoneSubmit(this)'>
+                  <div class='input-group mb-3 phoneInput'>
+                    <input type='text' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
+                  </div>
+
+                  <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain" value='Send'></input>
+
+                </form>
+              </div>
+              <div class='col-1'>
+
+              </div>
+
+            </div>
+          </div>
             <br />
           </div>
 
@@ -370,6 +402,7 @@
           <div class="input-group">
             <input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
+
               <button class="btn btn-outline-secondary notifySubmit" type="button">Submit</button>
             </div>
           </div>
