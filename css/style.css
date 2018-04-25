@@ -318,6 +318,10 @@ body {
   display: none;
 }
 
+.display-md {
+  display: none;
+}
+
 .appRow-main {
   width: 40%;
   height: 10vh;
@@ -359,7 +363,8 @@ body {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   border-radius: 3vh;
-  transition: all 0.3s ease;
+  transition: filter 0.6s ease;
+  -webkit-transition: -webkit-filter: 0.6s ease;
 
 }
 
@@ -372,6 +377,28 @@ body {
   width: 50%;
 }
 
+
+@media(max-width: 992px) {
+  .mainTitle {
+    font-size: 8vh;
+  }
+
+  .brandImg {
+    border-radius: 1.5vh;
+  }
+
+  .exclusiveTitle {
+    margin-top: 25vh;
+  }
+
+  .personalizeTitle {
+    font-size: 7vh;
+  }
+
+  .personalizeImg {
+    margin-top: 20vh;
+  }
+}
 
 @media (max-width: 768px) {
   .display-sm {
@@ -431,7 +458,6 @@ body {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
     border-radius: 2vh;
-    transition: all 0.3s ease;
   }
 
   .mvid {

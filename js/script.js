@@ -3,6 +3,11 @@ window.contactShowing = false;
 
 
 $(document).ready(function() {
+  // 
+  // $('*[data-tilt]').tilte({
+  //   glare: true,
+  //   maxGlare: .5;
+  // });
 
   $("#phoneForm").submit(function() {
 
