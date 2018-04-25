@@ -38,9 +38,9 @@
             </div>
 
             <div class='row numbRow appRow-main mb-3'>
-              <form action='/text' method='GET' id='phoneForm' onSubmit='return phoneSubmit(this)'>
+              <form action='/text' method='GET' id='phoneForm'>
                 <div class='input-group mb-3 phoneInput phoneInput-l'>
-                  <input type='text' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
+                  <input type='tel' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
                 </div>
 
                 <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain" value='Send'></input>
@@ -54,7 +54,7 @@
         <div class='col-md-6 titleSm'>
           <div class='display-sm'>
             <br />
-            <h1>Hypremium</h1>
+            <h1 class='font-weight-bold mainTitle'>Hypremium.</h1>
             <br />
             <br />
           </div>
@@ -82,9 +82,9 @@
 
               </div>
               <div class='col-12'>
-                <form action='/text' method='GET' id='phoneForm' onSubmit='return phoneSubmit(this)'>
+                <form action='/text' method='GET' id='phoneForm' class='phoneFormMb'>
                   <div class='input-group mb-3 phoneInput'>
-                    <input type='text' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
+                    <input type='tel' class='form-control phoneMain' placeholder='Phone Number' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
                   </div>
 
                   <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain" value='Send'></input>

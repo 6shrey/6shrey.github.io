@@ -4,6 +4,27 @@ window.contactShowing = false;
 
 $(document).ready(function() {
 
+  $("#phoneForm").submit(function() {
+
+    $(".phoneSendMain").fadeOut(200).promise().done(function() {
+      $(".phoneSendMain").val('Text Sent');
+      $(".phoneSendMain").prop('disabled', true)
+      $(".phoneSendMain").fadeIn();
+    });
+
+    return false;
+  });
+
+  $(".phoneFormMb").submit(function() {
+    $(".phoneSendMain").fadeOut(200).promise().done(function() {
+      $(".phoneSendMain").val('Text Sent');
+      $(".phoneSendMain").prop('disabled', true)
+      $(".phoneSendMain").fadeIn();
+    });
+
+    return false;
+  });
+
 
   maskOptions = {
     onComplete: function(cep) {
@@ -29,7 +50,10 @@ $(document).ready(function() {
   $(".sendTextImg").click(function() {
 
     $(".appRow").fadeOut(500).promise().done(function() {
+
+      $(".appRow_sm").fadeOut();
       $(".numbRow").fadeIn();
+
     });
 
 
@@ -38,6 +62,7 @@ $(document).ready(function() {
   $(".sendTextImg_sm").click(function() {
 
     $(".appRow_sm").fadeOut(200).promise().done(function() {
+      $(".appRow").fadeOut();
       $(".numbRow").fadeIn();
     });
 
