@@ -229,9 +229,10 @@ body {
   height: 1.2em;
 }
 
-.main {
+.main:not(.first) {
   min-height: 100vh;
 }
+
 
 .second {
   min-height: 80vh;
@@ -310,7 +311,7 @@ body {
 }
 
 .mvid {
-  max-height: 75vh;
+  max-height: 70vh;
 }
 
 .display-sm {
@@ -318,7 +319,7 @@ body {
 }
 
 .appRow-main {
-  width: 50%;
+  width: 40%;
   height: 10vh;
   margin-left: 0;
 }
@@ -434,8 +435,8 @@ body {
   }
 
   .mvid {
-    max-width: 80%;
-    margin-left: 10%;
+    max-width: 65%;
+    margin-left: 17.5%;
   }
 
   .brandsBg {
