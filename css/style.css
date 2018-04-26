@@ -374,8 +374,8 @@ textarea {
 
 
 .pill-light {
-  width: 10vh;
-  height: 2vh;
+  width: 10rem;
+  height: 2rem;
   background-color: #fff;
   border-radius: 2vh;
 }

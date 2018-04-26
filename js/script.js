@@ -4,10 +4,10 @@ window.state = 1;
 
 $(document).ready(function() {
   //
-  // $('*[data-tilt]').tilte({
-  //   glare: true,
-  //   maxGlare: .5;
-  // });
+  $('*[data-tilt]').tilte({
+    glare: true,
+    maxGlare: .5;
+  });
 
   //
   // window.onscroll = function(e) {
