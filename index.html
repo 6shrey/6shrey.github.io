@@ -18,6 +18,7 @@
   <body>
     <div class='container-fluid first scroll-1 main'>
       <div class='row titlePlus'>
+        <h6 class='hdot hide-sm'>H.</h6>
         <div class='col-md-1 hide-sm'>
 
         </div>
@@ -158,7 +159,7 @@
                 <h1 class='font-weight-bold brandsTitle'>Brands</h1>
                 <h5 class='font-weight-light brandsText mt-3 hide-sm'>Select your favorite brands such as Supreme, Bape, Palace and much more</h5>
                 <br />
-                <img class='img-fluid brandsAppStoreIcon hide-sm' src='/img/appstore.png' />
+                <img class='img-fluid brandsAppStoreIcon hide-sm w-25 ml-3' src='/img/appstore.png' />
                 <br />
                 <div class='col w-100 display-sm'>
 
@@ -306,7 +307,7 @@
     <br />
     <div class='container-fluid fourth scroll-4 main hide-sm'>
       <div class='row '>
-        <div class='col-md-5'>
+        <div class='col-lg-4 col-md-4 exclusive-left'>
           <div class='exclusive-cont'>
             <h5 class='text-right text-white exclusive-title mTop-lg'>Curated Collections <img src='https://i.imgur.com/wqmuhHw.png' class='exclusive-icon mt-1 icon-w' /></h5>
             <h6 class='font-weight-light text-right text-white exclusive-text-left'>Browse our hand picked collection of labels ranging from streetwear to high fashion.</h6>
@@ -315,7 +316,7 @@
           <br />
           <div class='exclusive-cont'>
             <h5 class='text-right text-white exclusive-title'>Exclusive Access <img src='https://i.imgur.com/WX7WxWP.png' class='exclusive-icon icon-h' /></h5>
-            <h6 class='font-weight-light text-right text-white exclusive-text-left'>Only approved sellers who pass our approval process are allowed to list items.</h6>
+            <h6 class='font-we  ight-light text-right text-white exclusive-text-left'>Only approved sellers who pass our approval process are allowed to list items.</h6>
           </div>
           <br />
           <div class='exclusive-cont'>
@@ -323,12 +324,12 @@
             <h6 class='font-weight-light text-right text-white exclusive-text-left'>All transactions are 100% secure through SSL encryption and processed through Stripe.</h6>
           </div>
         </div>
-        <div class='col-md-2'>
+        <div class='col-lg-4 col-md-4'>
           <h1 class='text-white text-center font-weight-bold exclusiveTitle'>Exclusive</h1>
           <br />
-          <img src='https://i.imgur.com/gmbIdVN.png' class='img-fluid ' />
+          <img src='https://i.imgur.com/gmbIdVN.png' class='img-fluid exclusiveImg' />
         </div>
-        <div class='col-md-5'>
+        <div class='col-lg-4 col-md-4 exclusive-right'>
           <div class='exclusive-cont'>
             <img src='https://i.imgur.com/Yfyo6lQ.png' class='exclusive-icon-left mt-1 icon-h' />
             <h5 class='text-left text-white mTop-lg exclusive-title-right'>Premium Experience</h5>
@@ -397,14 +398,13 @@
 
     <div class="container-fluid sixth scroll-6 notiColor main h-100 text-dark">
       <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-md-4 notifyDiv">
+        <div class="col-lg-5 col-md-6 col-sm-8 notifyDiv">
           <h1 class='font-weight-bold notiText text-center'>GET NOTIFIED.</h1>
           <br />
-          <div class="input-group">
-            <input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group notifyGroup">
+            <input type="email" class="form-control notifyInput" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-
-              <button class="btn btn-outline-secondary notifySubmit font-weight-bold" type="button">Submit</button>
+              <button class="btn btn-light notifySubmit font-weight-bold" type="button">Submit</button>
             </div>
           </div>
           <br />
@@ -413,28 +413,37 @@
           </p>
         </div>
 
-        <div class="col-md-4 contactDiv">
+        <div class="col-lg-4 col-md-6 col-sm-8 contactDiv">
           <h1 class='font-weight-bold notiText text-left'>We're here to help.</h1>
           <br />
           <h6 class='text-muted'>Full Name</h6>
-          <input type="text" class="form-control" placeholder="Enter your full name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <input type="text" class="form-control contactInput ml-2" placeholder="Enter your full name" aria-label="Recipient's username" aria-describedby="basic-addon2">
           <br />
           <h6 class='text-muted'>Email</h6>
-          <input type="email" class="form-control" placeholder="example@mail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <input type="email" class="form-control contactInput ml-2" placeholder="example@mail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
           <br />
           <h6 class='text-muted'>Message</h6>
-          <textarea class="form-control" name="body" form="contactForm" rows="3" placehold></textarea>
+          <textarea class="form-control contactInput ml-2" name="body" form="contactForm" rows="3" placeholder="What's on your mind?"></textarea>
           <br />
-          <input type='submit' class='btn btn-outline-dark text-center' value='Send' />
+          <div class='row'>
+            <div class='col-md-4 col-4'>
+            </div>
+            <div class='col-md-4 col-4'>
+              <input type='submit' class='btn btn-outline-dark btn-block contactSubmit' value='SUBMIT' />
+            </div>
+            <div class='col-md-4 col-4'>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-md-5 requestDiv text-white">
+        <div class="col-lg-5 col-md-6 col-sm-8 requestDiv text-white">
           <h1 class='font-weight-bold notiText text-center'>REQUEST TO SELL.</h1>
           <br />
           <div class="input-group">
-            <input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="email" class="form-control notifyInput" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-light notifySubmit" type="button">Submit</button>
+              <button class="btn btn-light notifySubmit font-weight-bold" type="button">Submit</button>
             </div>
           </div>
           <br />
@@ -448,7 +457,7 @@
     <div class='container-fluid footer notiColor hide-sm'>
       <div class='row'>
         <div class='col-md-4 col-4 text-left'>
-          <h6 class='font-weight-normal footerText'>&copy; Hypremium 2018</h6>
+          <h6 class='font-weight-normal footerText copyright'>&copy; 2018 <span class='logospace'>Hypremium</span></h6>
 
         </div>
         <div class='col-md-4 col-4 text-center'>
@@ -468,7 +477,6 @@
     <div class='container-fluid footer notiColor display-sm'>
       <h6 class='font-weight-normal footerText text-center contactBtn'>Contact us</h6>
 
-      <br />
       <div class='row'>
         <div class='col-1'>
 
@@ -483,7 +491,7 @@
 
       <div class='row'>
         <div class='col-6 text-left'>
-          <h6 class='font-weight-normal footerText'>&copy; Hypremium 2018</h6>
+          <h6 class='font-weight-normal footerText copyright'>&copy; 2018 Hypremium</h6>
         </div>
         <div class='col-6 text-right'>
           <h6 class='footerText'>
@@ -498,8 +506,6 @@
 
     </div>
   </body>
-  <script src='/js/ease.js'></script>
-  <script src='/js/scroll.js'></script>
   <script src='/js/script.js'></script>
 
 </html>

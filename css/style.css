@@ -129,6 +129,8 @@ body {
   display: none;
   background-color: #2b2a2a;
   font-family: 'Avenir';
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -218,6 +220,12 @@ body {
   left: 0;
 }
 
+.exclusiveImg {
+  margin: auto;
+  display: block;
+  width: 60%!important;
+}
+
 .icon-w {
   width: 1em;
 }
@@ -250,6 +258,52 @@ body {
 
 }
 
+.notifySubmit {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  font-size: 0.75rem;
+  height: 7vh;
+  padding-right: 1.5rem;
+}
+
+.notifySubmit:focus {
+  box-shadow: none!important;
+}
+
+.contactSubmit {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  border: 0.1rem solid #000;
+  border-radius: 0.3rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.notifyInput {
+  border: 0;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  height: 7vh;
+  padding-left: 1.5rem;
+}
+
+.notifyInput::placeholder {
+  color: #AFAFAF;
+}
+
+.notifyGroup {
+  filter: drop-shadow(0px 0px 4px #b2b2b2)
+}
+
+.contactInput, .contactInput:focus {
+  border: 0;
+  background-color: #f2f2f2;
+}
+
 .brandsBg {
   height: 100%;
   border-top-right-radius: 1vh;
@@ -276,6 +330,24 @@ body {
   font-size: 10vh;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 700!important;
+  letter-spacing: -0.03em;
+}
+
+.hdot {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  font-size: 5vh;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700!important;
+}
+
+.copyright {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700!important;
+}
+
+.logospace {
   letter-spacing: -0.03em;
 }
 
@@ -396,6 +468,19 @@ body {
     margin-top: 25vh;
   }
 
+  .exclusive-cont {
+    transform: scale(0.8);
+  }
+
+  .exclusive-left {
+    margin-right: -8vw;
+    margin-left: 8vw;
+  }
+
+  .exclusive-right {
+    margin-left: -8vw;
+  }
+
   .personalizeTitle {
     font-size: 7vh;
   }
@@ -438,6 +523,8 @@ body {
     font-size: 10vh;
     margin-top: 2vh;
   }
+
+
 
   .icon-diamond {
     height: 0.75em;
