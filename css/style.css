@@ -108,6 +108,10 @@
     font-style: normal;
 }
 
+.spacing-2 {
+  line-height: 2!important;
+}
+
 .font-weight-bold {
   font-weight: 900!important;
 }
@@ -126,6 +130,7 @@ body {
   background-color: #2b2a2a;
   font-family: 'Avenir';
 }
+
 
 .contactBtn:hover {
   cursor: pointer;

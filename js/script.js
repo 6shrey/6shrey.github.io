@@ -1,13 +1,34 @@
 window.sixthState = 'notify';
 window.contactShowing = false;
-
+window.state = 1;
 
 $(document).ready(function() {
-  // 
+  //
   // $('*[data-tilt]').tilte({
   //   glare: true,
   //   maxGlare: .5;
   // });
+
+  //
+  // window.onscroll = function(e) {
+  //   // print "false" if direction is down and "true" if up
+  //   var goingUp = (this.oldScroll > this.scrollY);
+  //   this.oldScroll = this.scrollY;
+  //
+  //   if (goingUp == true) {
+  //
+  //   } else {
+  //     $("body").css('overflow-y', 'hidden').promise().done(function() {
+  //
+  //       $(".scroll-" + (window.state + 1)).scrollIntoView(function() {
+  //         console.log('done')
+  //       });
+  //
+  //     });
+  //   }
+  //
+  // }
+
 
   $("#phoneForm").submit(function() {
 
