@@ -133,6 +133,9 @@ body {
   overflow-y: auto;
 }
 
+.mouse_container-2 {
+	transform: scale(0.4);
+}
 
 .contactBtn:hover {
   cursor: pointer;
@@ -323,6 +326,7 @@ textarea {
   border: 2vh solid #2b2a2a;
   border-radius: 2.7vh;
   position: relative!important;
+  height: 88vh;
 
 }
 

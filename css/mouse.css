@@ -16,10 +16,6 @@
   justify-content: center;
 }
 
-.mouse_container-2 {
-	transform: scale(0.4);
-}
-
 .mouse:before, .mouse:after {
   content: "";
   position: absolute;
