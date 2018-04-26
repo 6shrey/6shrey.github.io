@@ -451,11 +451,15 @@ textarea {
   -moz-box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.46);
   box-shadow: 0px 0px 36px -6px rgba(0,0,0,0.46);
   filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  -webkit-filter: grayscale(100%) opacity(50%); /* Chrome 19+ & Safari 6+ */
   border-radius: 3vh;
   transition: filter 0.6s ease;
   -webkit-transition: -webkit-filter: 0.6s ease;
+}
 
+.brandimg-container {
+  background-color: #fff;
+  border-radius: 3vh;
 }
 
 .brandImg:hover {
@@ -477,6 +481,10 @@ textarea {
 
   .brandImg {
     border-radius: 1.5vh;
+  }
+
+  .brandimg-container {
+    border-radius: 1.5;
   }
 
   .exclusiveTitle {
@@ -564,6 +572,10 @@ textarea {
     box-shadow: none;
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    border-radius: 2vh;
+  }
+
+  .brandimg-container {
     border-radius: 2vh;
   }
 
