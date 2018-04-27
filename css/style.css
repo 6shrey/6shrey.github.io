@@ -540,6 +540,19 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .footerText {
+    font-size: 80%;
+  }
+
+  .copyright {
+    margin-left: 10%;
+
+  }
+
+  .social-icons {
+    margin-right: 10%;
+  }
+
   .display-sm {
     display: inherit;
   }
@@ -624,14 +637,5 @@ textarea {
     margin-top: 0%;
   }
 
-  .copyright {
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 700!important;
-    margin-left: 0%;
-  }
-
-  .social-icons {
-    margin-right: 0%;
-  }
 
 }
