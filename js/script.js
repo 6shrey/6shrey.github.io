@@ -3,27 +3,28 @@ window.contactShowing = false;
 window.state = 1;
 
 $(document).ready(function() {
-  //
 
-  //
-  // window.onscroll = function(e) {
-  //   // print "false" if direction is down and "true" if up
-  //   var goingUp = (this.oldScroll > this.scrollY);
-  //   this.oldScroll = this.scrollY;
-  //
-  //   if (goingUp == true) {
-  //
-  //   } else {
-  //     $("body").css('overflow-y', 'hidden').promise().done(function() {
-  //
-  //       $(".scroll-" + (window.state + 1)).scrollIntoView(function() {
-  //         console.log('done')
-  //       });
-  //
-  //     });
-  //   }
-  //
-  // }
+  $(".phone-main").on('input', function() {
+    val = $(".phoneFormMain").serializeArray()[0].value;
+
+    if (val.length < 1) {
+      $(".phone-main")[0].style='font-size: 50%; font-weight: 800;'
+    } else {
+
+      $(".phone-main")[0].style = 'font-size: 100%!important; font-weight: normal!important;'
+    }
+  });
+
+  $(".phone-mobile").on('input', function() {
+    val = $(".phoneFormMb").serializeArray()[0].value;
+
+    if (val.length < 1) {
+      $(".phone-mobile")[0].style='font-size: 50%; font-weight: 800;'
+    } else {
+
+      $(".phone-mobile")[0].style = 'important; font-size: 100%!important; font-weight: normal!important;'
+    }
+  });
 
 
   $("#phoneForm").submit(function() {
