@@ -205,19 +205,19 @@ body {
 
 .exclusive-text-left {
   margin-left: 20%;
-  width: 80%;
   font-size: 90%;
-  line-height: 1.5;
+  line-height: 1.8;
   letter-spacing: 0.3;
+  margin-right: 2rem;
   color: #fefefe!important;
 }
 
 .exclusive-text-right {
   margin-right: 20%;
-  width: 80%;
   font-size: 90%;
-  line-height: 1.5;
+  line-height: 1.8;
   letter-spacing: 0.3;
+  margin-left: 2rem;
   color: #fefefe!important;
 
 }
