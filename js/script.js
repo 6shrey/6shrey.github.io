@@ -2,7 +2,21 @@ window.sixthState = 'notify';
 window.contactShowing = false;
 window.state = 1;
 
+
 $(document).ready(function() {
+
+  var topofDiv = $(".first").offset().top;
+  var height = $(".first").outerHeight();
+
+  $(window).scroll(function(){
+      if(($(window).scrollTop() - 200) > (topofDiv + height)){
+         $(".mouse_container").css('opacity', '0');
+      }
+      else{
+         $(".mouse_container").css('opacity', '1');
+      }
+  });
+
 
   $(".phone-main").on('input', function() {
     val = $(".phoneFormMain").serializeArray()[0].value;
@@ -31,7 +45,9 @@ $(document).ready(function() {
 
     $(".phoneSendMain").fadeOut(200).promise().done(function() {
       $(".phoneSendMain").val('Text Sent');
-      $(".phoneSendMain").prop('disabled', true)
+      $(".phoneSendMain").prop('disabled', true);
+      $(".phoneSendMain").removeClass('fadeInUp');
+      $(".phoneSendMain").addClass('textSentBtn zoomInLeft');
       $(".phoneSendMain").fadeIn();
     });
 
@@ -41,7 +57,9 @@ $(document).ready(function() {
   $(".phoneFormMb").submit(function() {
     $(".phoneSendMain").fadeOut(200).promise().done(function() {
       $(".phoneSendMain").val('Text Sent');
-      $(".phoneSendMain").prop('disabled', true)
+      $(".phoneSendMain").prop('disabled', true);
+      $(".phoneSendMain").removeClass('fadeInUp');
+      $(".phoneSendMain").addClass('textSentBtn zoomInLeft');
       $(".phoneSendMain").fadeIn();
     });
 

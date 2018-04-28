@@ -120,6 +120,59 @@
   display: none;
 }
 
+.exclusive-main-img {
+  width: 55%;
+  margin-left: 22.5%;
+}
+
+.exclusive-main-title {
+  font-size: 3rem;
+}
+
+.exclusive-pad {
+  margin-top: 25vh;
+}
+
+.exclusive-sub-title {
+  line-height: 2rem;
+  letter-spacing: .02rem;
+}
+
+.exclusive-main-caption {
+  font-weight: 200;
+  letter-spacing: .02rem;
+  line-height: 1.7;
+  color: #fefefe;
+}
+
+.exclusive-img-left {
+  width: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: -1.5rem;
+}
+
+.exclusive-img-shoe {
+  width: 2rem;
+  position: absolute;
+  top: .25rem;
+  right: -2rem;
+}
+
+.exclusive-img-right {
+  width: 2rem;
+  position: absolute;
+  top: .25rem;
+  left: -2rem;
+}
+
+.exclusive-img-coin {
+  width: 1.75rem;
+  position: absolute;
+  top: .25rem;
+  left: -1.75rem;
+}
+
 small {
   font-weight: 500!important;
 }
@@ -134,7 +187,11 @@ body {
 }
 
 .mouse_container-2 {
-	transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.mouse_container {
+  transition: opacity .5s;
 }
 
 .contactBtn:hover {
@@ -152,6 +209,10 @@ body {
 .notiColor {
   background-color: #F6F6F6;
   transition: background-color .5s;
+}
+
+.phone-mobile:focus {
+  font-size: 100!important%
 }
 
 
@@ -469,7 +530,14 @@ textarea {
 
 .phoneSendMain {
   display: none;
+  letter-spacing: 0.05rem;
   width: 150%!important;
+}
+
+.textSentBtn, .textSentBtn:focus {
+  background-color: #f6f6f6!important;
+  color: #000!important;
+  border: .2rem solid #000;
 }
 
 .form-control:focus {

@@ -3,7 +3,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' type='text/css' />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel='stylesheet' href='/css/style.css' type='text/css' />
@@ -45,7 +45,7 @@
                   <input type='tel' class='form-control phoneMain phone-main' placeholder='ENTER YOUR PHONE NUMBER TO DOWNLOAD THE APP' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
                 </div>
 
-                <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain text-center" value='SEND'></input>
+                <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain font-weight-bold text-center" value='SEND'></input>
 
               </form>
             </div>
@@ -89,7 +89,7 @@
                     <input type='tel' class='form-control phoneMain phone-mobile' placeholder='ENTER YOUR PHONE NUMBER TO DOWNLOAD THE APP' name='number' aria-label='Recipients username' aria-describedby='basic-addon2' >
                   </div>
 
-                  <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain text-center" value='SEND'></input>
+                  <input type="submit" class="animated fadeInUp btn btn-dark btn-block phoneSendMain font-weight-bold text-center" value='SEND'></input>
 
                 </form>
               </div>
@@ -323,50 +323,74 @@
     <br />
     <div class='container-fluid fourth scroll-4 main hide-sm'>
       <div class='row '>
-        <div class='col-lg-4 col-md-4 exclusive-left'>
-          <div class='exclusive-cont'>
-            <h5 class='text-right text-white exclusive-title mTop-lg'>Curated Collections <img src='https://i.imgur.com/wqmuhHw.png' class='exclusive-icon mt-1 icon-w' /></h5>
-            <h6 class='font-weight-light text-right text-white exclusive-text-left'>Browse our hand picked collection of labels ranging from streetwear to high fashion.</h6>
-          </div>
+        <div class='col-md-4 p-0 exclusive-pad'>
+          <div class='row text-right text-light' >
+            <div class='col-md-1'>
 
-          <br />
-          <div class='exclusive-cont'>
-            <h5 class='text-right text-white exclusive-title'>Exclusive Access <img src='https://i.imgur.com/WX7WxWP.png' class='exclusive-icon icon-h' /></h5>
-            <h6 class='font-weight-light text-right text-white exclusive-text-left'>Only approved sellers who pass our approval process are allowed to list items.</h6>
+            </div>
+            <div class='col-md-10'>
+              <h5 class='exclusive-sub-title font-weight-bold'>Curated Collections <img class='exclusive-img-shoe' src='https://i.imgur.com/wqmuhHw.png' /></h5>
+              <h6 class='exclusive-main-caption'>Browse our hand picked collection of labels ranging from streetwear to high fashion.</h6>
+            </div>
           </div>
           <br />
-          <div class='exclusive-cont'>
-            <h5 class='text-right text-white exclusive-title'>Secure Checkout <img src='https://i.imgur.com/0qP0mSP.png' class='exclusive-icon icon-h' /></h5>
-            <h6 class='font-weight-light text-right text-white exclusive-text-left'>All transactions are 100% secure through SSL encryption and processed through Stripe.</h6>
+          <div class='row text-right text-light' >
+            <div class='col-md-1'>
+
+            </div>
+            <div class='col-md-10'>
+              <h5 class='exclusive-sub-title font-weight-bold'>Exclusive Access <img class='exclusive-img-left' src='https://i.imgur.com/WX7WxWP.png' /></h5>
+              <h6 class='exclusive-main-caption'>Only approved sellers who pass our approval process are allowed to list items.</h6>
+            </div>
+          </div>
+          <br />
+          <div class='row text-right text-light' >
+            <div class='col-md-1'>
+
+            </div>
+            <div class='col-md-10'>
+              <h5 class='exclusive-sub-title font-weight-bold'>Secure Checkout <img class='exclusive-img-left' src='https://i.imgur.com/0qP0mSP.png' /></h5>
+              <h6 class='exclusive-main-caption'>All transactions are 100% secure through SSL encryption and processed through Stripe.</h6>
+            </div>
           </div>
         </div>
-        <div class='col-lg-4 col-md-4'>
-          <h1 class='text-white text-center font-weight-bold exclusiveTitle'>Exclusive</h1>
+        <div class='col-md-4 p-0'>
           <br />
-          <img src='https://i.imgur.com/gmbIdVN.png' class='img-fluid exclusiveImg' />
+          <br />
+          <h1 class='font-weight-bold text-white text-center exclusive-main-title'>Exclusive</h1>
+          <br />
+          <img src='https://i.imgur.com/gmbIdVN.png' class='img-fluid exclusive-main-img' />
         </div>
-        <div class='col-lg-4 col-md-4 exclusive-right'>
-          <div class='exclusive-cont'>
-            <img src='https://i.imgur.com/Yfyo6lQ.png' class='exclusive-icon-left mt-1 icon-h' />
-            <h5 class='text-left text-white mTop-lg exclusive-title-right'>Premium Experience</h5>
-            <h6 class='font-weight-light text-left text-white exclusive-text-right'>We focus heavily on not only the buyer, but the seller to make a seamless process.</h6>
-          </div>
+        <div class='col-md-4 p-0 exclusive-pad'>
+            <div class='row text-left text-light' >
+              <div class='col-md-1'>
 
-          <br />
-          <div class='exclusive-cont'>
-            <img src='https://i.imgur.com/U7lPWOa.png' class='exclusive-icon-left mt-1 icon-car' />
+              </div>
+              <div class='col-md-10'>
+                <h5 class='exclusive-sub-title font-weight-bold'>Premium Experience <img class='exclusive-img-right' src='https://i.imgur.com/Yfyo6lQ.png' /></h5>
+                <h6 class='exclusive-main-caption'>We focus heavily on not only the buyer, but the seller to make a seamless process.</h6>
+              </div>
+            </div>
+            <br />
+            <div class='row text-left text-light ' >
+              <div class='col-md-1'>
 
-            <h5 class='text-left text-white exclusive-title-right'>Fast Shipping</h5>
-            <h6 class='font-weight-light text-left text-white exclusive-text-right'>All items are shipped within 24 hours upon successful approval from our specialists.</h6>
-          </div>
-          <br />
-          <div class='exclusive-cont'>
-            <img src='https://i.imgur.com/Pr0s2cT.png' class='exclusive-icon-left mt-1 icon-coin' />
+              </div>
+              <div class='col-md-10'>
+                <h5 class='exclusive-sub-title font-weight-bold'>Fast Shipping <img class='exclusive-img-right' src='https://i.imgur.com/U7lPWOa.png' /></h5>
+                <h6 class='exclusive-main-caption'>All items are shipped within 24 hours upon successful approval from our specialists.</h6>
+              </div>
+            </div>
+            <br />
+            <div class='row text-left text-light' >
+              <div class='col-md-1'>
 
-            <h5 class='text-left text-white exclusive-title-right'>Buy Now</h5>
-            <h6 class='font-weight-light text-left text-white exclusive-text-right'>Choose to purchase immediately through Apple Pay/Credit Card or place an offer.</h6>
-
-          </div>
+              </div>
+              <div class='col-md-10'>
+                <h5 class='exclusive-sub-title font-weight-bold'>Buy Now <img class='exclusive-img-coin' src='https://i.imgur.com/Pr0s2cT.png' /></h5>
+                <h6 class='exclusive-main-caption'>Choose to purchase immediately through Apple Pay/Credit Card or place an offer.</h6>
+              </div>
+            </div>
         </div>
       </div>
     </div>
